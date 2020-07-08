@@ -1,6 +1,6 @@
 test()
 {
-main=/users2/yxwang/work/codes/cl_bert/supervised_bert.py
+main=CLBT/supervised_bert.py
 
 batch=64
 loss=l2_dist

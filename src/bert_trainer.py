@@ -17,7 +17,8 @@ from src.utils import get_optimizer, load_embeddings, normalize_embeddings, expo
 from src.utils import clip_parameters
 from src.evaluation.word_translation import DIC_EVAL_PATH, load_identical_char_dico, load_dictionary
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-from torch.utils.data.dataloader import _DataLoaderIter
+# from torch.utils.data.dataloader import _DataLoaderIter
+from torch.utils.data.dataloader import _SingleProcessDataLoaderIter, _MultiProcessingDataLoaderIter
 
 logger = getLogger()
 
