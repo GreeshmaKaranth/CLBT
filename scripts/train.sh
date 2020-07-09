@@ -2,8 +2,8 @@ train()
 {
 main=CLBT/supervised_bert.py
 
-vocab=trial_data/multi_vocab.txt
-vocab1=trial_data/en_vocab.txt
+vocab=CLBT/trial_data/multi_vocab.txt
+vocab1=CLBT/trial_data/en_vocab.txt
 
 batch=64
 n_epoch=500
@@ -36,5 +36,5 @@ CUDA_VISIBLE_DEVICES=$gpu python $main --bert_file0 $input0 --bert_file1 $input1
 }
 
 env=/users2/yxwang/work/env/py3.6_torch0.4.1/bin/activate
-train 1 trial_data/de-en.100.de.bert trial_data/de-en.100.en.bert svd.en-de.trial-model trial_data/de-en.100.wp.align svd
+train 0 CLBT/trial_data/de-en.100.de.bert CLBT/trial_data/de-en.100.en.bert CLBT/models/test/svd.en-de.trial-model CLBT/trial_data/de-en.100.wp.align svd
 
