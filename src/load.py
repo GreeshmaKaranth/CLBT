@@ -29,8 +29,8 @@ import string
 
 import torch
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-# from torch.utils.data.dataloader import _DataLoaderIter
-from torch.utils.data.dataloader import _SingleProcessDataLoaderIter, _MultiProcessingDataLoaderIter
+from torch.utils.data.dataloader import _DataLoaderIter
+# from torch.utils.data.dataloader import _SingleProcessDataLoaderIter, _MultiProcessingDataLoaderIter
 from torch.utils.data.distributed import DistributedSampler
 
 from src import tokenization

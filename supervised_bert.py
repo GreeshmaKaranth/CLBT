@@ -21,8 +21,8 @@ from src.supervised_bert_trainer import SupervisedBertTrainer
 from src.bert_evaluator import BertEvaluator
 from src.bert_evaluator import load_stop_words, rm_stop_words, cos_sim, get_overlaps, get_overlap_sim
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-# from torch.utils.data.dataloader import _DataLoaderIter
-from torch.utils.data.dataloader import _SingleProcessDataLoaderIter, _MultiProcessingDataLoaderIter
+from torch.utils.data.dataloader import _DataLoaderIter
+# from torch.utils.data.dataloader import _SingleProcessDataLoaderIter, _MultiProcessingDataLoaderIter
 
 def main():
     # main
