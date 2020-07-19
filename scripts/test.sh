@@ -28,4 +28,4 @@ CUDA_VISIBLE_DEVICES=$gpu python $main --load_pred_bert --bert_file0 $input0 \
 --vocab_file $vocab --pred
 }
 
-test 4 trial_data/de-en.100.de.bert svd.en-de.trial-model linear de.transformed.bert 
+test 0 CLBT/trial_data/de-en.100.de.bert CLBT/models/test/svd.en-de.trial-model linear de.transformed.bert 
