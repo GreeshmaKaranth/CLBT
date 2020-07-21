@@ -301,7 +301,9 @@ class SupervisedBertTrainer(object):
         """
         Reload the best mapping.
         """
+
         path = os.path.join(self.args.model_path, 'best_mapping.pkl')
+        path = "CLBT/" + path
         logger.info('* Loading the best model from %s ...' % path)
         # reload the model
         assert os.path.isfile(path)

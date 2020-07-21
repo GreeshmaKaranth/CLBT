@@ -36,5 +36,6 @@ CUDA_VISIBLE_DEVICES=$gpu python $main --bert_file0 $input0 --bert_file1 $input1
 }
 
 env=/users2/yxwang/work/env/py3.6_torch0.4.1/bin/activate
-train 0 CLBT/trial_data/de-en.100.de.bert CLBT/trial_data/de-en.100.en.bert CLBT/models/test/svd.en-de.trial-model CLBT/trial_data/de-en.100.wp.align svd
+# train 0 CLBT/trial_data/de-en.100.de.bert CLBT/trial_data/de-en.100.en.bert CLBT/models/test/svd.en-de.trial-model CLBT/trial_data/de-en.100.wp.align svd
+train 0 CLBT/trial_data/en-hi.8.en.bert CLBT/trial_data/en-hi.8.hi.bert CLBT/models/test/svd.en-hi.trial-model CLBT/trial_data/en-hi.8.wp.align svd
 

@@ -1,13 +1,13 @@
 test()
 {
-main=/users2/yxwang/work/codes/cl_bert/supervised_bert.py
+main=CLBT/supervised_bert.py
 
 batch=64
 loss=l2_dist
 n_layer=2
 
-vocab=trial_data/multi_vocab.txt
-vocab1=trial_data/en_vocab.txt
+vocab=CLBT/trial_data/multi_vocab.txt
+vocab1=CLBT/trial_data/en_vocab.txt
 
 gpu=$1
 input0=$2
